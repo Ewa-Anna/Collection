@@ -114,3 +114,8 @@ hr {
 .language-options-dropdown option:hover {
     background: #5ca6e29a;
 }
+
+footer {
+    font-size: small;
+    padding: 5px;
+}

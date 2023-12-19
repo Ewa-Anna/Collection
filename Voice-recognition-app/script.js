@@ -19,12 +19,15 @@ function clearTextarea() {
     textarea.value = "";
 }
 
-function generatePDF() {
+function generateTXT() {
     var textToSave = document.getElementById("textarea-result").value;
-    var pdf = new jsPDF();
-    pdf.setFontSize(12);
-    pdf.text(10, 10, textToSave);
-    pdf.save("output.pdf");
+    var blob = new Blob([textToSave], { type: "text/plain" });
+    var link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "output.txt";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition;
