@@ -37,10 +37,16 @@ h1 {
 
 .main-box {
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 #fromCurrencies, #toCurrencies {
     border: none;
     border-radius: 6px;
     background-color: #99ffc0;
+}
+
+footer {
+    font-size: small;
+    text-align: justify;
 }

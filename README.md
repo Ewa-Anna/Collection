@@ -9,4 +9,4 @@ This repository contains collection of small JavaScript projects.
 
 
 ## Acknowledgements
-- Currency exchanger [fawazahmed0's currency api](https://github.com/fawazahmed0/currency-api)
+- API for Currency exchanger [fawazahmed0's currency api](https://github.com/fawazahmed0/currency-api)
