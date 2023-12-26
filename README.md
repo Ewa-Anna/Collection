@@ -7,6 +7,6 @@ This repository contains collection of small JavaScript projects.
 - [Voice Recognition App](Voice-recognition-app/index.html) - [Code](https://github.com/Ewa-Anna/Collection/tree/main/Voice-recognition-app)
 - [Currency exchanger](Currency-exchanger/index.html) - [Code](https://github.com/Ewa-Anna/Collection/tree/main/Currency-exchanger)
 
-
 ## Acknowledgements
+
 - API for Currency exchanger [fawazahmed0's currency api](https://github.com/fawazahmed0/currency-api)

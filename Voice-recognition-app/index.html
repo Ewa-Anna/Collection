@@ -1,59 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <title>Voice Recognition Note Taking App</title>
-    
+
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-
-</head>
-<body>
-
-<div id="content" class="content">
-    <div class="div-main-header">
+  </head>
+  <body>
+    <div id="content" class="content">
+      <div class="div-main-header">
         <h1 class="main-header">Voice Recognition Note Taking App</h1>
-    </div>
-    <div class="left-right-div">
+      </div>
+      <div class="left-right-div">
         <div class="left-div">
-            <div class="formatting-options"></div>
+          <div class="formatting-options"></div>
 
-            <textarea id="textarea-result" placeholder="Press 'Start listening' and start speaking " class="result-text" name="textarea"></textarea>
+          <textarea
+            id="textarea-result"
+            placeholder="Press 'Start listening' and start speaking "
+            class="result-text"
+            name="textarea"
+          ></textarea>
 
-            <div class="btn-options">
-                <button onclick="clearTextarea()" class="btn clear">
-                    Clear <i class="fa-solid fa-broom" style="color: #134192;"></i>
-                </button>
-                <button onclick="generateTXT()" class="btn save">
-                    Save as .txt <i class="fa-solid fa-floppy-disk" style="color: #134192;"></i>
-                </button>
-            </div>
+          <div class="btn-options">
+            <button onclick="clearTextarea()" class="btn clear">
+              Clear <i class="fa-solid fa-broom" style="color: #134192"></i>
+            </button>
+            <button onclick="generateTXT()" class="btn save">
+              Save as .txt
+              <i class="fa-solid fa-floppy-disk" style="color: #134192"></i>
+            </button>
+          </div>
         </div>
 
         <div class="right-div">
-            <div class="language-options">
-                <select class="language-options-dropdown">
-                    <option value="English">English</option>
-                </select>
-            </div>
-            <hr>
-            <button id="toggleMicrophone" onclick="startRecognition()" class="btn microphone">
-                Start listening <i class="fa-solid fa-microphone" style="color: #134192;"></i>
-            </button>
+          <div class="language-options">
+            <select class="language-options-dropdown">
+              <option value="English">English</option>
+            </select>
+          </div>
+          <hr />
+          <button
+            id="toggleMicrophone"
+            onclick="startRecognition()"
+            class="btn microphone"
+          >
+            Start listening
+            <i class="fa-solid fa-microphone" style="color: #134192"></i>
+          </button>
         </div>
+      </div>
+
+      <footer>
+        Firefox does not support voice recognition. Please kindly use other
+        browsers.
+      </footer>
     </div>
 
-    <footer>Firefox does not support voice recognition. Please kindly use other browsers.</footer>
-
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
